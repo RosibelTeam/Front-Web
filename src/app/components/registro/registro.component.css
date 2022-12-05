@@ -42,12 +42,10 @@ nav{
 
 
 .imagen{
-  background: url(imagenes/logo_resized.png);
   width: 35.2%;
   margin-top: 5rem;
   margin-left: 10rem;
   float: left;
-
 }
 .imagen>img{
   margin: 33%;
