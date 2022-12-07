@@ -6,56 +6,38 @@
   height: 100vh;
 }
 
-.letra{
-  font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
 
-.letranav{
-  font-family: 'Dongle';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 22px;
-    color: #FFFFFF;
-}
-
-/*
-para mover el contenedor azul */
 .login-imagen{
-  width: 380px;
-    height: 560px;
-    background: rgba(51, 77, 209, 0.83);
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 90px 30px;
-    border-radius: 70px;
-}
-/* para mover la posisicion de arriba hacia abajo del login */
-.login-imagen .user{
-  width: 190px;
-  height: 190px;
+  width: 320px;
+  height: 420px;
+  background: rgba(51, 77, 209, 0.83);
+  color: #fff;
+  top: 50%;
+  left: 50%;
   position: absolute;
-  top: 20px;
-  left: calc(46% - 80px);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 69px;
+}
+
+.login-imagen .user{
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 80px);
 }
 
 .login-imagen label {
   padding-right:0px;
   display: block;
+
 }
-/* para que el boton este mas abajo del formulario */
+
 .login-imagen input {
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 .login-imagen input[type="password"]
 {
@@ -65,25 +47,19 @@ para mover el contenedor azul */
   height: 20px;
   font-size: 16px;
 }
-
-/* para el boton */
 .login-imagen input[type="submit"] {
   border: none;
   outline: none;
+  height: 30px;
   background: #222222;
   color: #fff;
   font-size: 20px;
   border-radius: 10px;
-  width: 150px;
-  height: 40px;
-  position: absolute;
-    top: 450px;
-    left: 110px;
 }
-/* darle color al boton cuando el cursor este encima de el */
-.login-imagen input[type="password"] {
+
+.login-imagen input[type="submit"]:hover {
   cursor: pointer;
-  background: #088ae1;
+  background: #0763a1;
   color: #000;
 }
 
@@ -99,27 +75,26 @@ width: 900px;
 margin: 0 auto;
 }
 
-/* para la imagen de la papeleria */
 .papeleria{
   position: absolute;
-width: 288px;
-height: 225px;
-left: 36px;
-top: 100px;
+width: 238px;
+height: 175px;
+left: 96px;
+top: 55px;
 }
 
 nav {
-float: center;
+float: right;
 }
 
 nav ul li {
 list-style: none;
 margin-left: 90px;
-padding: 20px 60px;
+padding: 15px 0;
 float: left;
 position: relative;
 }
-/* para el color de las letras de la navar */
+
 nav ul li a {
 text-decoration: none;
 color: #fff;
@@ -130,36 +105,17 @@ nav ul li a::before {
 display: block;
 content: '';
 width: 0%;
-background: rgb(243, 234, 234);
-height: 6px;
+background: #fff;
+height: 5px;
 top:0;
 position: absolute;
 transition: width 0.2s;
 }
 
 nav ul li a:hover::before {
-width: 60%;
+width: 100%;
 }
-
-/* para mover el formulario */
 #mover{
-  padding-top: 45%;
+  padding-top: 40%;
 }
 
-.btn {
-  border: none;
-  outline: none;
-  background: #222222;
-  color: #fff;
-  font-size: 20px;
-  border-radius: 10px;
-  width: 150px;
-  height: 40px;
-  position: absolute;
-  top: 450px;
-  left: 120px;
-}
-
-.btn:hover {
-  background: #088ae1;
-}

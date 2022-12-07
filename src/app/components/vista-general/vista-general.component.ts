@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductosService } from 'src/app/servicies/productos.service';
+import { producto } from '../models/tablas';
 
 @Component({
   selector: 'app-vista-general',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VistaGeneralComponent implements OnInit {
 
-  constructor() { }
+  constructor(public productoServise:ProductosService) { }
 
   ngOnInit(): void {
+
+  }
+  obtenerProducto(){
+    this.productoServise.obtenerProd().subscribe(
+      res=>this.productoServise.productoM=res,
+      err=>console.error(err)
+    )
   }
 
 }
