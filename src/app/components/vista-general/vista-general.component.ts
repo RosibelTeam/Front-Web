@@ -12,13 +12,16 @@ export class VistaGeneralComponent implements OnInit {
   constructor(public productoServise:ProductosService) { }
 
   ngOnInit(): void {
+    this.obtenerProducto()
 
   }
+
   obtenerProducto(){
     this.productoServise.obtenerProd().subscribe(
       res=>this.productoServise.productoM=res,
       err=>console.error(err)
     )
   }
+
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ClientesService } from 'src/app/servicies/clientes.service';
 
 @Component({
   selector: 'app-inicio-secion',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioSecionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private clienteServicio:ClientesService) { }
 
   ngOnInit(): void {
   }
 
+  obtenerClientes(){
+    this.clienteServicio.obtenerCliente().subscribe(
+      res=>{
+        console.log(res)
+      }
+    )
+  }
+  
 }
+
