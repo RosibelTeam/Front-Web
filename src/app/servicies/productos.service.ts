@@ -27,7 +27,7 @@ export class ProductosService {
   CompraPaquete:0
   };
   actualizar=false;
-
+  
   constructor(private http:HttpClient) { }
 
   obtenerProd(){

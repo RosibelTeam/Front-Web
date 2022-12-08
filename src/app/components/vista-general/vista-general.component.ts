@@ -15,11 +15,13 @@ export class VistaGeneralComponent implements OnInit {
     this.obtenerProducto()
 
   }
+
   obtenerProducto(){
     this.productoServise.obtenerProd().subscribe(
       res=>this.productoServise.productoM=res,
       err=>console.error(err)
     )
   }
+
 
 }

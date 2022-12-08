@@ -1,3 +1,4 @@
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -27,7 +28,6 @@ html{
   padding-top: 1rem;
 }
 img{
-  
   width: 60%;
   height: 8.8rem;
 }

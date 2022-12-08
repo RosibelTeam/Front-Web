@@ -18,6 +18,8 @@ export class RepartidorService {
   }
 
 
+
+
   constructor(private http:HttpClient) { }
   obtenerRepartidor(){
     return this.http.get<Repartidor[]>(this.URL_API);
