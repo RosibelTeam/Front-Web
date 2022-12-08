@@ -12,6 +12,7 @@ export class VistaGeneralComponent implements OnInit {
   constructor(public productoServise:ProductosService) { }
 
   ngOnInit(): void {
+    this.obtenerProducto()
 
   }
   obtenerProducto(){
