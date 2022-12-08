@@ -135,7 +135,7 @@ nav ul li a:hover::before {
   width: 60%;
 }
 
-.formulariobusqueda{
+input{
   position: absolute;
     width: 384px;
     height: 45px;
