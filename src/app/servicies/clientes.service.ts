@@ -13,7 +13,7 @@ export class ClientesService {
     Apellidos:'',
     Direccion:'',
     Celular:'',
-    Contraseña:''
+    Contrasena:''
   }
   constructor(private http:HttpClient) { }
 

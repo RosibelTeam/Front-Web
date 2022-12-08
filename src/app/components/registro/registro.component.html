@@ -36,35 +36,46 @@
     <div class="menu">
       <img class="papeleria" id="papeleria" src="https://i.ibb.co/MPb59vJ/Logo-Papeleria.png" alt="Logo-Papeleria">
     </div>
-    <form action="">
+    <form #FormRegistro="ngForm">
       <div class="contenedor">
         <div class="col-lg-13">
           <div class="mb-1">
             <label for="formGroupExampleInput" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="Nombre" placeholder="Nombre" name="Nombre">
+            <input type="text" class="form-control" id="Nombre" placeholder="Nombre" name="Nombre"
+            [(ngModel)]="clienteServicio.clienteSelecto.Nombre"
+            >
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="Apellido" placeholder="Apellido" name="Apellido">
+            <input type="text" class="form-control" id="Apellido" placeholder="Apellido" name="Apellido"
+            [(ngModel)]="clienteServicio.clienteSelecto.Apellidos"
+            >
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Correo</label>
-            <input type="text" class="form-control" id="correo" placeholder="Correo" name="Correo">
+            <input type="text" class="form-control" id="correo" placeholder="Correo" name="Correo"
+            [(ngModel)]="clienteServicio.clienteSelecto.CorreoCliente"
+            >
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Teléfono</label>
-            <input type="text" class="form-control" id="telefono" placeholder="Telefono" name="Telefono">
+            <input type="text" class="form-control" id="telefono" placeholder="Telefono" name="Telefono"
+            [(ngModel)]="clienteServicio.clienteSelecto.Celular"
+
+            >
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña" name="contraseña">
+            <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña" name="contraseña"
+            [(ngModel)]="clienteServicio.clienteSelecto.Contrasena"
+            >
           </div>
           <div class="mb-3">
             <label for="formGroupExampleInput" class="form-label">Confirmar Contraseña</label>
             <input type="password" class="form-control" id="Confirmacion" placeholder="Contraseña" name="confirmacion">
           </div>
           <div>
-            <button  class="btn">Registrar</button>
+            <button  class="btn"  (click)="insertarCliente(FormRegistro)">Registrar</button>
           </div>
         </div>
       </div>

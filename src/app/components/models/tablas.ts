@@ -22,7 +22,7 @@ export interface producto{
   Apellidos:String,
   Direccion:String,
   Celular:string,
-  Contraseña:String
+  Contrasena:String
  }
 
  export interface Repartidor{

@@ -10,9 +10,11 @@ import { ClientesService } from 'src/app/servicies/clientes.service';
 })
 export class RegistroComponent implements OnInit {
 
-  constructor(public clienteServicio:ClientesService) { }
+  constructor(public clienteServicio:ClientesService) {  }
 
   ngOnInit(): void {
+    this.obtenerClientes()
+
   }
 
   insertarCliente(form:NgForm){
@@ -25,6 +27,13 @@ export class RegistroComponent implements OnInit {
         )
       },
       err=>console.error(err)
+    )
+  }
+  obtenerClientes(){
+    this.clienteServicio.obtenerCliente().subscribe(
+      res=>{
+        console.log(res)
+      }
     )
   }
 }
