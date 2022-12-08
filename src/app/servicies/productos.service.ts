@@ -6,7 +6,7 @@ import { Cliente } from '../components/models/tablas';
   providedIn: 'root'
 })
 export class ProductosService {
-  URL_API='http://localhost:3000/api/producto'
+  URL_API='https://papeleria-production.up.railway.app/api/productos'
   productoM:producto[]=[];
   productoSelecto:producto={
   CodigoBarras:'',

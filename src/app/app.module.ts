@@ -9,6 +9,7 @@ import { InicioSecionComponent } from './components/inicio-secion/inicio-secion.
 import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { FormsModule, NgModel } from '@angular/forms';
 import { AppRoutingModule } from './app.routing.module';
+import { RegistroProductosComponent } from './components/registro-productos/registro-productos.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AppRoutingModule } from './app.routing.module';
     PagoProductoComponent,
     ConfiUsrComponent,
     InicioSecionComponent,
+    RegistroProductosComponent
   ],
   imports: [
     BrowserModule,
