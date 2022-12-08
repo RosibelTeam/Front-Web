@@ -10,6 +10,7 @@ import { HttpClient,HttpClientModule } from '@angular/common/http';
 import { FormsModule, NgModel } from '@angular/forms';
 import { AppRoutingModule } from './app.routing.module';
 import { RegistroProductosComponent } from './components/registro-productos/registro-productos.component';
+import { RepartidorComponent } from './components/repartidor/repartidor.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RegistroProductosComponent } from './components/registro-productos/regi
     PagoProductoComponent,
     ConfiUsrComponent,
     InicioSecionComponent,
-    RegistroProductosComponent
+    RegistroProductosComponent,
+    RepartidorComponent
   ],
   imports: [
     BrowserModule,
