@@ -7,8 +7,8 @@ import { PagoProductoComponent } from './components/pago-producto/pago-producto.
 import { ConfiUsrComponent } from './components/confi-usr/confi-usr.component';
 import { InicioSecionComponent } from './components/inicio-secion/inicio-secion.component';
 import { HttpClient,HttpClientModule } from '@angular/common/http';
-import { RegistroProductosComponent } from './components/registro-productos/registro-productos.component';
 import { FormsModule, NgModel } from '@angular/forms';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -18,16 +18,12 @@ import { FormsModule, NgModel } from '@angular/forms';
     PagoProductoComponent,
     ConfiUsrComponent,
     InicioSecionComponent,
-    RegistroProductosComponent,
-
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
-
-
-
+    FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
