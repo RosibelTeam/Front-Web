@@ -71,13 +71,13 @@ footer{
 }
 #orientacion{
 
-  margin-top: 1rem;
+  margin-top: 5px;
   color: rgb(11, 11, 11);
   text-align: center;
 
   padding-right: 30%;
   }
-  #titulos{
+  .titulos{
 
     color: rgb(11, 11, 11);
     text-align: center;

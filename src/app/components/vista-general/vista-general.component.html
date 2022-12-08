@@ -28,8 +28,8 @@
                 <div class="box1" *ngFor="let productos of productoServise.productoM">
 
                     <img style="background-image: url({{productos.Imagen}});">
-
-                    <h4 id="titulos">{{productos.Categoria}}</h4>
+                    <H4 class="titulos">${{productos.PrecioUnidad}}</H4>
+                    <h6 class="titulos">{{productos.Categoria}}</h6>
                     <p id="orientacion">{{productos.Descripcion}}</p>
                    </div>
             </section>
@@ -216,7 +216,6 @@
 
 </div> -->
     </main>
-
     <footer>
         <div>
             <h2>Papeleria Huauchinango
@@ -231,7 +230,7 @@
 
         </div>
         <h3>Derechos reservados Papeleria Huauchinango</h3>
-        </footer>
+    </footer>
 
 
 </body>

@@ -5,23 +5,19 @@ import { producto } from '../models/tablas';
 @Component({
   selector: 'app-vista-general',
   templateUrl: './vista-general.component.html',
-  styleUrls: ['./vista-general.component.css']
+  styleUrls: ['./vista-general.component.css'],
 })
 export class VistaGeneralComponent implements OnInit {
-
-  constructor(public productoServise:ProductosService) { }
+  constructor(public productoServise: ProductosService) {}
 
   ngOnInit(): void {
-    this.obtenerProducto()
-
+    this.obtenerProducto();
   }
 
-  obtenerProducto(){
+  obtenerProducto() {
     this.productoServise.obtenerProd().subscribe(
-      res=>this.productoServise.productoM=res,
-      err=>console.error(err)
-    )
+      (res) => (this.productoServise.productoM = res),
+      (err) => console.error(err)
+    );
   }
-
-
 }
