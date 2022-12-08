@@ -13,6 +13,7 @@ export class RegistroComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   insertarCliente(form:NgForm){
     this.clienteServicio.insertarCliente(form.value).subscribe(
       res=>{
@@ -24,7 +25,5 @@ export class RegistroComponent implements OnInit {
       },
       err=>console.error(err)
     )
-
   }
-
 }

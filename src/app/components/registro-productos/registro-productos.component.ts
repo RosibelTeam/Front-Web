@@ -54,10 +54,6 @@ export class RegistroProductosComponent implements OnInit {
         )
       },
       err=>console.error(err)
-
     )
-
   }
-
-
 }

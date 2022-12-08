@@ -25,3 +25,13 @@ export interface producto{
   Contraseña:String
  }
 
+ export interface Repartidor{
+  CorreoRepartidor:String,
+  Nombre:String,
+  Apellidos:String,
+  Direccion:String,
+  Celular:String,
+  Contraseña:String
+ }
+
+
