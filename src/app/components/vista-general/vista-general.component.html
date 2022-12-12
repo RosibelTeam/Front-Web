@@ -30,18 +30,28 @@
       </form>
     </div>
   </nav>
-  <div class="card" style="width:20rem; " *ngFor="let productos of productoServise.productoM">
-    <img style="background-image: url({{productos.Imagen}});">
+  <!-- <div class="card" style="width: 18rem;" *ngFor="let productos of productoServise.productoM">
+    <div class="container">
+      <img style="background-image: url({{productos.Imagen}});">
+    </div>
     <div class="card-body">
-      <h4 id="titulos">{{productos.Categoria}}</h4>
-      <p id="orientacion">{{productos.Descripcion}}</p>
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
+      </p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>
-  <div class="box1" *ngFor="let productos of productoServise.productoM">
-    <img style="background-image: url({{productos.Imagen}});">
-    <h4 id="titulos">{{productos.Categoria}}</h4>
-    <p id="orientacion">{{productos.Descripcion}}</p>
+  </div> -->
+  <div class="card" style="width: 18rem;" *ngFor="let productos of productoServise.productoM">
+    <img  style="background-image: url({{productos.Imagen}});" >
+    <div class="card-body">
+      <div class="conteCategoria">
+        <h4 >{{productos.Categoria}}</h4>
+      </div>
+      <div class="conteDescripcion">
+        <p>{{productos.Descripcion}}</p>
+      </div>
+      <button  class="btnVer">Ver</button>
+    </div>
   </div>
 </body>
 </html>
