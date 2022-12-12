@@ -29,123 +29,109 @@
 
 
     <div class="formulario">
+      <form class="row g-3 needs-validation" novalidate>
 
-      <div class="col-lg-5" >
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Codigo de barras</label>
-          <input type="text" class="form-control" id="codigoBarras" placeholder="Codigo de Barras" name="codigoBarras"
-          [(ngModel)]="productosService.productoSelecto.CodigoBarras"
-          >
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">CodigoBarras</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
-
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Categoria</label>
-          <input type="text" class="form-control" id="Categoria" placeholder="Categoria" name="Categoria"
-          [(ngModel)]="productosService.productoSelecto.Categoria"
-          >
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Marca</label>
-          <input type="text" class="form-control" id="Marca" placeholder="Marca" name="Marca"
-          [(ngModel)]="productosService.productoSelecto.Marca"
-          >
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
 
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Descripcion</label>
-          <input type="text" class="form-control" id="Descripcion" placeholder="Descripcion" name="Descripcion"
-          [(ngModel)]="productosService.productoSelecto.Descripcion"
-          >
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
 
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Piezas</label>
-          <input type="number" class="form-control" id="Piezas" placeholder="Piezas a registrar" name="Piezas"
-          [(ngModel)]="productosService.productoSelecto.Piezas"
-          >
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
         </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">First name</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
 
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Color</label>
-          <input type="text" class="form-control" id="Color" placeholder="Color" name="Color"
-          [(ngModel)]="productosService.productoSelecto.Color"
-          >
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">url de imagen</label>
-          <input type="text" class="form-control" id="Imagen" placeholder="url de la imagen 1" name="Imagen"
-          [(ngModel)]="productosService.productoSelecto.Imagen"
-          >
-        </div>
 
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Url de imagen2</label>
-          <input type="text" class="form-control" id="Imagen2" placeholder="url de la imagen 2" name="Imagen2"
-          [(ngModel)]="productosService.productoSelecto.Imagen2"
-          >
-        </div>
 
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Unidades por mayoreo</label>
-          <input type="text" class="form-control" id="UnidadesMayoreo" placeholder="Unidades por Mayoreo" name="UnidadesMayoreo"
-          [(ngModel)]="productosService.productoSelecto.UnidadesMayoreo"
-          >
         </div>
-
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Paquetes en existencias</label>
-          <input type="number" class="form-control" id="Existencias" placeholder="Paquetes en Existencias" name="ExistenciasPaquete"
-          [(ngModel)]="productosService.productoSelecto.ExistenciasPaquete"
-          >
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Unidades en existencias</label>
-          <input type="number" class="form-control" id="Existencias" placeholder="Unidades en Existencias" name="ExistenciasUnidades"
-          [(ngModel)]="productosService.productoSelecto.ExistenciasUnidad"
-          >
-        </div>
-
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Entradas</label>
-          <input type="number" class="form-control" id="PrecioPaquete" placeholder="Entradas" name="Entradas"
-          [(ngModel)]="productosService.productoSelecto.Entradas"
-          >
-        </div>
-
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Precio por Unidad</label>
-          <input type="number" class="form-control" id="Existencias" placeholder="Existencias" name="PrecioUnidad"
-          [(ngModel)]="productosService.productoSelecto.PrecioUnidad"
-          >
-        </div>
-
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Precio Paquete</label>
-          <input type="number" class="form-control" id="PrecioMayoreo" placeholder="Precio Mayoreo" name="PrecioPaquete"
-          [(ngModel)]="productosService.productoSelecto.PrecioMayoreo"
-          >
-        </div>
-
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Precio Mayoreo</label>
-          <input type="number" class="form-control" id="PrecioPaquete" placeholder="Precio Por Paquete" name="PrecioMayoreo"
-          [(ngModel)]="productosService.productoSelecto.PrecioPaquete"
-          >
-        </div>
-
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Compra De paquete</label>
-          <input type="number" class="form-control" id="CompraPaquete" placeholder="Precio Por Paquete" name="CompraPaquete"
-          [(ngModel)]="productosService.productoSelecto.CompraPaquete"
-          >
-        </div>
-        <div>
-          <button type="button" class="btn btn-dark" *ngIf="productosService.actualizar==false" (click)="insertarProducto(Form)">Registrar</button>
-          <button type="button" class="btn btn-dark" *ngIf="productosService.actualizar==true" (click)="actualizarprod(Form)">Registrar</button>
-        </div>
-
-      </div>
-    </div>
     <section>
       <div id="tabla">
 
@@ -166,14 +152,11 @@
               <th>Precio Unidad</th>
               <th>Precio Paquete</th>
               <th>Precio Mayoreo</th>
-              <th>Compra Paquete</th>
+
               <th>Editar</th>
               <th>Eliminar</th>
             </tr>
           </thead>
-
-
-
             <tr *ngFor="let productos of productosService.productoM">
 
               <td>{{productos.CodigoBarras}}</td>
@@ -182,8 +165,6 @@
               <td>{{productos.Descripcion}}</td>
               <td>{{productos.Piezas}}</td>
               <td>{{productos.Color}}</td>
-              <td>{{productos.Imagen}}</td>
-              <td>{{productos.Imagen2}}</td>
               <td>{{productos.UnidadesMayoreo}}</td>
               <td>{{productos.ExistenciasPaquete}}</td>
               <td>{{productos.ExistenciasUnidad}}</td>
@@ -211,4 +192,5 @@
     </section>
   </section>
 </body>
+
 </html>

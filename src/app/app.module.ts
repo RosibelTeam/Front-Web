@@ -11,6 +11,7 @@ import { FormsModule, NgModel } from '@angular/forms';
 import { AppRoutingModule } from './app.routing.module';
 import { RegistroProductosComponent } from './components/registro-productos/registro-productos.component';
 import { RepartidorComponent } from './components/repartidor/repartidor.component';
+import { AdministradorComponent } from './components/administrador/administrador.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,10 @@ import { RepartidorComponent } from './components/repartidor/repartidor.componen
     ConfiUsrComponent,
     InicioSecionComponent,
     RegistroProductosComponent,
-    RepartidorComponent
+    RepartidorComponent,
+    AdministradorComponent
   ],
+  
   imports: [
     BrowserModule,
     HttpClientModule,

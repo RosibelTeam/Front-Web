@@ -1,4 +1,5 @@
 export interface producto {
+  idProducto:number;
   CodigoBarras: String;
   Categoria: String;
   Marca: String;

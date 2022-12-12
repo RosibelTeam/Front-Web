@@ -6,7 +6,7 @@ import { Repartidor } from '../components/models/tablas';
   providedIn: 'root'
 })
 export class RepartidorService {
-  URL_API="https://papeleria-production.up.railway.app/api/repartidores"
+  URL_API='https://papeleria-production.up.railway.app/api/repartidores'
   repartidor:Repartidor[]=[]
   repartidorSelecto:Repartidor={
   CorreoRepartidor:'',

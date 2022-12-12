@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ClientesService {
-  URL_API="https://papeleria-production.up.railway.app/api/clientes"
+  URL_API='https://papeleria-production.up.railway.app/api/clientes'
   clientes:Cliente[]=[]
   clienteSelecto:Cliente={
     CorreoCliente:'',
@@ -26,4 +26,5 @@ export class ClientesService {
   eliminarCliente(CorreoCliente:String){
     return this.http.delete(this.URL_API+"/"+CorreoCliente)
   }
+
 }

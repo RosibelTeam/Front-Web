@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
+import { ProductosService } from './productos.service';
 import { producto } from '../components/models/tablas';
 import { HttpClient } from '@angular/common/http';
-import { Cliente } from '../components/models/tablas';
+
 @Injectable({
   providedIn: 'root'
 })
-export class ProductosService {
-  URL_API='https://papeleria-production.up.railway.app/api/productos'
-
+export class CategoriaService {
+  URL_API='https://papeleria-production.up.railway.app/api/productos/categoria'
   productoM:producto[]=[];
   productoSelecto:producto={
   idProducto:0,
@@ -30,22 +30,15 @@ export class ProductosService {
   };
   actualizar=false;
 
+
   constructor(private http:HttpClient) { }
 
-  obtenerProd(){
-    return this.http.get<producto[]>(this.URL_API)
+  obtenerCatego(Categoria:String){
+    return this.http.get(this.URL_API+"/"+Categoria)
   }
 
-  insertarProducto(productoM:producto){
-    return this.http.post(this.URL_API,productoM)
+  obtenerCliente(){
+    return this.http.get<producto[]>(this.URL_API);
   }
-  actualizarProducto(productoM:producto){
-    return this.http.put(this.URL_API+"/"+productoM.CodigoBarras,productoM)
-  }
-  eliminarProducto(codigoBarras:String){
-    return this.http.delete(this.URL_API+"/"+codigoBarras)
-  }
+
 }
-
-
-

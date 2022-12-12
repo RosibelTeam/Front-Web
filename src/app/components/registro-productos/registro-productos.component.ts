@@ -12,13 +12,24 @@ export class RegistroProductosComponent implements OnInit {
   constructor(public productosService:ProductosService) { }
 
   ngOnInit(): void {
+    this.obtenerProdu()
   }
+
+  obtenerProdu(){
+    this.productosService.obtenerProd().subscribe(
+      (res)=>(this.productosService.productoM=res),
+        (err)=>console.log(err)
+    );
+  }
+
   obtenerProductos(){
     this.productosService.obtenerProd().subscribe(
       res=>this.productosService.productoM=res,
       err=>console.error(err)
     )
   }
+
+
   obtenerProducto(produ:producto){
     this.productosService.productoSelecto=produ
     this.productosService.actualizar=true
