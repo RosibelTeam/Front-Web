@@ -4,75 +4,9 @@
   padding: 0;
 
 }
-
 html {
   font-size: 62.5%;
 }
-
-.opciones {
-  background-color: #131F60;
-  padding: 1rem;
-  list-style: none;
-  text-align: right;
-  color: white;
-}
-
-.opciones li {
-  display: inline-block;
-  font-size: 1.5rem;
-  margin: 1rem;
-  padding-inline: 1rem;
-  padding-top: 1rem;
-}
-
-.box1 {
-  width: 15%;
-  border-radius: 1.6rem;
-  margin-top: 2rem;
-  float: right;
-  justify-content: center;
-  padding: 15px;
-}
-
-.fon {
-  display: block;
-  background-color: aquamarine;
-  margin-top: 1rem;
-  float: left;
-}
-
-footer {
-  width: 100%;
-  float: left;
-  display: block;
-  background-color: #131F60;
-  color: aliceblue;
-}
-
-#pas {
-  display: block;
-  float: left;
-  font-size: 25px;
-  margin-right: 80%;
-}
-
-.info {
-  display: block;
-  width: 100%;
-  float: left;
-  font-size: 25px;
-  padding: 5%;
-}
-
-#orientacion {
-
-  margin-top: 1rem;
-  color: rgb(11, 11, 11);
-  text-align: center;
-  padding-right: 30%;
-}
-
-
 .letranav {
   font-family: 'Dongle';
   font-style: normal;
@@ -81,7 +15,6 @@ footer {
   line-height: 22px;
   color: #FFFFFF;
 }
-
 .letra {
   font-family: 'Poppins';
   font-style: normal;
@@ -118,28 +51,27 @@ nav ul li a:hover::before {
 /* Contenedor de los botones en la nav */
 .con {
   position: relative;
-  left: 9%;
+  left: 3%;
 }
-
-form {
+/* para el formuladio que tiene el de buscar */
+.d-flex {
   border: none;
   outline: none;
   color: #fff;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: -89px;
   width: 400px;
   height: 40px;
+  margin-right: -8%;
 }
-
-/* para la imagen de la papeleria */
+/* para la imagen de la papeleria para mover el titulo de papelria en linea huauchinango */
 .papeleria {
-  width: 130px;
-  height: 100px;
+  width: 110px;
+  height: 80px;
   position: relative;
-  left: 8%;
-  margin-right: -159px;
+  left: 90%;
+  margin-right: -45px; /*aqui se mueve el letrero */
 }
-
 /* letra de los botones de la navbar */
 .letra {
   font-family: 'Poppins';
@@ -202,12 +134,12 @@ img {
   outline: none;
   background: #334DD1;
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 10px;
   width: 40%;
-  height: 15%;
+  height: 16%;
   position: relative;
-  left: 15%;
+  left: 17%;
   top: 15%;
 }
 
@@ -229,4 +161,109 @@ img {
 
 .btn:hover {
   background: #088ae1;
+}
+
+.material-icons
+{
+  font-size: 25px;
+  position: relative;
+    left: 15%;
+    top: 10%;
+}
+/* Menú costado */
+
+/* Contenido del menu, esto es el icono (posición) y tamaño */
+.container .btn-menu,
+.logo,
+label {
+  float: left;
+  line-height: 100px;
+  color: #fff;
+  font-size: 50px;
+  cursor: pointer;
+  position: relative;
+  left: -1470px;      /*con este se mueve el icono de rayas menu */
+}
+
+/* Componentes del menú del costado, botones y demás */
+
+/* Botón menu */
+#btn-menu {
+  display: none;
+}
+
+/* Contenedor del menu, cuando se abre y su posición */
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+/* Visibilidad del menú costado, traerlo */
+#btn-menu:checked~.container-menu {
+  opacity: 4;
+  visibility: visible;
+}
+
+/* Contenido del menú (Inicio, Usuario,etc, además del color del fondo del mismo) */
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #131F60;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+
+/* Posición del contenedor (lo despega del lado izquierdo, dejalo así) */
+#btn-menu:checked~.container-menu .cont-menu {
+  transform: translateX(0%);
+}
+
+/* Determina la altura del contenido del menú */
+.cont-menu nav {
+  transform: translateY(100%);
+}
+
+/* Tamaño, tipo de letra y demás de Inicio, cerrar sesión  */
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+  position: relative;
+  top: -290px;
+}
+
+/* Color de cuando pasas el puntero por los botones */
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f;
+}
+
+/* Tamaño y color del icon de X (cerrar) */
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: rgb(250, 12, 12);
+  cursor: pointer;
+  font-size: 98px;
+}
+.usuario{
+  width: 150px;
+  height: 150px;
+  position: relative;
+    left: 15%;
+    top: -300px;
 }
