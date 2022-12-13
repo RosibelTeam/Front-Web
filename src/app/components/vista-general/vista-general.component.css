@@ -38,7 +38,7 @@ nav ul li a::before {
 }
 
 nav ul li a:hover::before {
-  width: 30%;
+  width: 52%;
 }
 
 .nav-item {
@@ -51,7 +51,7 @@ nav ul li a:hover::before {
 /* Contenedor de los botones en la nav */
 .con {
   position: relative;
-  left: 3%;
+  left: 12%;
 }
 /* para el formuladio que tiene el de buscar */
 .d-flex {
@@ -222,12 +222,10 @@ label {
   transition: all 500ms ease;
   transform: translateX(-100%);
 }
-
 /* Posición del contenedor (lo despega del lado izquierdo, dejalo así) */
 #btn-menu:checked~.container-menu .cont-menu {
   transform: translateX(0%);
 }
-
 /* Determina la altura del contenido del menú */
 .cont-menu nav {
   transform: translateY(100%);
