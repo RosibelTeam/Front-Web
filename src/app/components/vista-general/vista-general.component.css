@@ -267,3 +267,11 @@ label {
     left: 15%;
     top: -300px;
 }
+footer{
+  width: 100%;
+  float: left;
+  display:block;
+  background-color: #131F60;
+  color: white;
+
+}
