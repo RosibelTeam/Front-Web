@@ -25,111 +25,138 @@
   <section>
 
 
-  <form #Form="ngForm">
+  <form #form="ngForm">
 
 
     <div class="formulario">
       <form class="row g-3 needs-validation" novalidate>
 
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">CodigoBarras</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom01" class="form-label">Categoria</label>
+          <input type="text" class="form-control" id="Categoria" value="Categoria" name="Categoria"
+          [(ngModel)]="productosService.productoSelecto.Categoria"
+          >
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom02" class="form-label">Codigo de Barras</label>
+          <input type="text" class="form-control" id="CodigoBarras" value="Codigo de Barras" name="CodigoBarras"
+          [(ngModel)]="productosService.productoSelecto.CodigoBarras"
+          >
         </div>
 
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom01" class="form-label">Color</label>
+          <input type="text" class="form-control" id="Color" value="Color" required name="Color"
+          [(ngModel)]="productosService.productoSelecto.Color"
+          >
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom02" class="form-label">Compra Paquete</label>
+          <input type="number" class="form-control" id="CompraPaquete" value="Compra Paquete" required name="CompraPaquete"
+          [(ngModel)]="productosService.productoSelecto.CompraPaquete"
+          >
+
         </div>
 
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom01" class="form-label">Descripcion</label>
+          <input type="text" class="form-control" id="Descripcion" value="Descripcion" required name="Descripcion"
+          [(ngModel)]="productosService.productoSelecto.Descripcion"
+          >
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom02" class="form-label">Entradas</label>
+          <input type="number" class="form-control" id="Entradas" value="Entradas" required name="Entradas"
+          [(ngModel)]="productosService.productoSelecto.Entradas"
+          >
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom01" class="form-label">Paquetes en Existencias</label>
+          <input type="number" class="form-control" id="ExistenciasPaquete" value="Paquetes en exisia" required name="ExistenciasPaquete"
+          [(ngModel)]="productosService.productoSelecto.ExistenciasPaquete"
+          >
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom02" class="form-label">Unidades en Existencias</label>
+          <input type="number" class="form-control" id="ExistenciasUnidad" value="Unidades en existencia" required name="ExistenciasUnidad"
+          [(ngModel)]="productosService.productoSelecto.ExistenciasUnidad"
+          >
         </div>
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom01" class="form-label">link de imagen 1</label>
+          <input type="text" class="form-control" id="Imagen" value="Imagen" required name="Imagen" name="Imagen"
+          [(ngModel)]="productosService.productoSelecto.Imagen"
+          >
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom02" class="form-label">Link de imagen 2</label>
+          <input type="text" class="form-control" id="Imagen2" value="Imagen 2" required name="Imagen2"
+          [(ngModel)]="productosService.productoSelecto.Imagen2"
+          >
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom01" class="form-label">Marca</label>
+          <input type="text" class="form-control" id="Marca" value="Marca" required name="Marca"
+          [(ngModel)]="productosService.productoSelecto.Marca"
+          >
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom02" class="form-label">Piezas</label>
+          <input type="number" class="form-control" id="Piezas" value="Piezas" required name="Piezas"
+          [(ngModel)]="productosService.productoSelecto.Piezas"
+          >
+
+
         </div>
         <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <label for="validationCustom01" class="form-label">Precio Mayoreo</label>
+          <input type="number" class="form-control" id="PrecioMayoreo" value="Precio a mayoreo" required name="PrecioMayoreo"
+          [(ngModel)]="productosService.productoSelecto.PrecioMayoreo"
+          >
+
         </div>
+
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Precio Paquete</label>
+          <input type="number" class="form-control" id="PrecioPaquete" value="Precio Paquete" required name="PrecioPaquete"
+          [(ngModel)]="productosService.productoSelecto.PrecioPaquete"
+          >
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Precio Unidad</label>
+          <input type="number" class="form-control" id="PrecioUnidad" value="Precio Unidad" required name="PrecioUnidad"
+          [(ngModel)]="productosService.productoSelecto.PrecioUnidad"
+          >
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Unidadades Mayoreo</label>
+          <input type="number" class="form-control" id="UnidadesMayoreo" value="Unidades en Mayoreo" required name="UnidadesMayoreo"
+          [(ngModel)]="productosService.productoSelecto.UnidadesMayoreo"
+          >
+
+        </div>
+
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">id del producto</label>
+          <input type="number" class="form-control" id="idProducto" value="Mark" required name="idProducto">
+
+
+        </div>
+
         <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
+          <button class="btn btn-primary" type="submit" (click)="insertarProducto(form)">Registrar</button>
         </div>
       </form>
-
-
 
         </div>
     <section>
@@ -145,14 +172,12 @@
               <th>Descripcion</th>
               <th>Piezas</th>
               <th>Color</th>
-              <th>Unidad Mayoreo</th>
               <th>paquetes en Existencias</th>
               <th>Unidades en existencias</th>
               <th>Entradas</th>
               <th>Precio Unidad</th>
               <th>Precio Paquete</th>
               <th>Precio Mayoreo</th>
-
               <th>Editar</th>
               <th>Eliminar</th>
             </tr>
@@ -165,7 +190,6 @@
               <td>{{productos.Descripcion}}</td>
               <td>{{productos.Piezas}}</td>
               <td>{{productos.Color}}</td>
-              <td>{{productos.UnidadesMayoreo}}</td>
               <td>{{productos.ExistenciasPaquete}}</td>
               <td>{{productos.ExistenciasUnidad}}</td>
               <td>{{productos.Entradas}}</td>
@@ -180,7 +204,7 @@
               </td>
               <td>
                 <button class ="btn btn-danger" (click)="eliminar(productos.CodigoBarras)" >
-                  <i class = "bi bi-trash3">Eliminar</i>
+                  <i class = "material-icons">delete</i>
                 </button>
               </td>
             </tr>

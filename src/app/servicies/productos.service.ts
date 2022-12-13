@@ -10,23 +10,24 @@ export class ProductosService {
 
   productoM:producto[]=[];
   productoSelecto:producto={
-  idProducto:0,
-  CodigoBarras:'',
-  Categoria:'',
-  Marca:'',
-  Descripcion:'',
-  Piezas:0,
-  Color:'',
-  Imagen:'',
-  Imagen2:'',
-  UnidadesMayoreo:'',
-  ExistenciasPaquete:0,
-  ExistenciasUnidad:0,
-  Entradas:0,
-  PrecioUnidad:0,
-  PrecioPaquete:0,
-  PrecioMayoreo:0,
-  CompraPaquete:0
+    idProducto:0,
+    CodigoBarras:'',
+    Categoria:'',
+    Marca:'',
+    Descripcion:'',
+    Piezas:0,
+    Color:'',
+    Imagen:'',
+    Imagen2:'',
+    UnidadesMayoreo:0,
+    ExistenciasPaquete:0,
+    ExistenciasUnidad:0,
+    Entradas:0,
+    PrecioUnidad:0,
+    PrecioPaquete:0,
+    PrecioMayoreo:0,
+    CompraPaquete:0
+
   };
   actualizar=false;
 
@@ -42,8 +43,8 @@ export class ProductosService {
   actualizarProducto(productoM:producto){
     return this.http.put(this.URL_API+"/"+productoM.CodigoBarras,productoM)
   }
-  eliminarProducto(codigoBarras:String){
-    return this.http.delete(this.URL_API+"/"+codigoBarras)
+  eliminarProducto(CodigoBarras:String){
+    return this.http.delete(this.URL_API+"/"+CodigoBarras)
   }
 }
 

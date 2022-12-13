@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ClientesService {
-  URL_API='https://papeleria-production.up.railway.app/api/clientes'
+  URL_API='/api/clientes'
   clientes:Cliente[]=[]
   clienteSelecto:Cliente={
     CorreoCliente:'',

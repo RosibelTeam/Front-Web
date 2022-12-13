@@ -1,21 +1,23 @@
 export interface producto {
-  idProducto:number;
-  CodigoBarras: String;
   Categoria: String;
-  Marca: String;
-  Descripcion: String;
-  Piezas: Number;
-  Color: String;
-  Imagen: String;
-  Imagen2: String;
-  UnidadesMayoreo: String;
-  ExistenciasPaquete: number;
-  ExistenciasUnidad: Number;
-  Entradas: number;
-  PrecioUnidad: number;
-  PrecioPaquete: number;
-  PrecioMayoreo: Number;
-  CompraPaquete: number;
+  CodigoBarras: String;
+  Color:String;
+  CompraPaquete:number;
+  Descripcion:String;
+  Entradas:number;
+  ExistenciasPaquete:number;
+  ExistenciasUnidad:number;
+  Imagen:String;
+  Imagen2:String;
+  Marca:String;
+  Piezas:number;
+  PrecioMayoreo:number;
+  PrecioPaquete:number;
+  PrecioUnidad:number;
+  UnidadesMayoreo:number;
+  idProducto:number
+
+
 }
 export interface Cliente {
   CorreoCliente: String;

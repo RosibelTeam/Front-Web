@@ -19,7 +19,7 @@ export class CategoriaService {
   Color:'',
   Imagen:'',
   Imagen2:'',
-  UnidadesMayoreo:'',
+  UnidadesMayoreo:0,
   ExistenciasPaquete:0,
   ExistenciasUnidad:0,
   Entradas:0,

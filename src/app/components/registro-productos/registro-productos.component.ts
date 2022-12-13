@@ -6,6 +6,8 @@ import { NgForm } from '@angular/forms';
   selector: 'app-registro-productos',
   templateUrl: './registro-productos.component.html',
   styleUrls: ['./registro-productos.component.css']
+
+
 })
 export class RegistroProductosComponent implements OnInit {
 
@@ -13,13 +15,15 @@ export class RegistroProductosComponent implements OnInit {
 
   ngOnInit(): void {
     this.obtenerProdu()
+    this.obtenerProductos()
   }
 
   obtenerProdu(){
     this.productosService.obtenerProd().subscribe(
-      (res)=>(this.productosService.productoM=res),
-        (err)=>console.log(err)
-    );
+      res=>{
+        console.log(res)
+      }
+    )
   }
 
   obtenerProductos(){
