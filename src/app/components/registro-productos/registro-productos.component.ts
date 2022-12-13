@@ -6,19 +6,34 @@ import { NgForm } from '@angular/forms';
   selector: 'app-registro-productos',
   templateUrl: './registro-productos.component.html',
   styleUrls: ['./registro-productos.component.css']
+
+
 })
 export class RegistroProductosComponent implements OnInit {
 
   constructor(public productosService:ProductosService) { }
 
   ngOnInit(): void {
+    this.obtenerProdu()
+    this.obtenerProductos()
   }
+
+  obtenerProdu(){
+    this.productosService.obtenerProd().subscribe(
+      res=>{
+        console.log(res)
+      }
+    )
+  }
+
   obtenerProductos(){
     this.productosService.obtenerProd().subscribe(
       res=>this.productosService.productoM=res,
       err=>console.error(err)
     )
   }
+
+
   obtenerProducto(produ:producto){
     this.productosService.productoSelecto=produ
     this.productosService.actualizar=true

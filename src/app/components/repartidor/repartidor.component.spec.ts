@@ -8,9 +8,8 @@ describe('RepartidorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RepartidorComponent ]
-    })
-    .compileComponents();
+      declarations: [RepartidorComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(RepartidorComponent);
     component = fixture.componentInstance;

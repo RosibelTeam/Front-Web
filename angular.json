@@ -72,6 +72,7 @@
           "configurations": {
             "production": {
               "browserTarget": "front-pelis:build:production"
+
             },
             "development": {
               "browserTarget": "front-pelis:build:development"
