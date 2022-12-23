@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 html {
   font-size: 62.5%;
@@ -80,6 +79,7 @@ nav ul li a:hover::before {
   font-size: 22px;
   line-height: 22px;
   color: #FFFFFF;
+  position: static;
 }
 
 .card {
@@ -99,9 +99,8 @@ img {
   height: 170px;
   background-size: cover;
   position: relative;
-  left: 25%;
+  left: 60px;
   top: 2px;
-
 }
 
 .card-body {
@@ -139,8 +138,8 @@ img {
   width: 40%;
   height: 16%;
   position: relative;
-  left: 17%;
-  top: 15%;
+  left: 15%;
+  top: 10%;
 }
 
 .btnVer:hover {
@@ -156,11 +155,11 @@ img {
   border-radius: 10px;
   width: 150px;
   height: 40px;
-
 }
 
 .btn:hover {
   background: #088ae1;
+  position: static;
 }
 
 .material-icons
@@ -194,10 +193,10 @@ label {
 
 /* Contenedor del menu, cuando se abre y su posición */
 .container-menu {
-  position: absolute;
+  position: absolute; z-index: 1;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100vh;
+  height: 160%;
   top: 0;
   left: 0;
   transition: all 500ms ease;
@@ -210,6 +209,7 @@ label {
 #btn-menu:checked~.container-menu {
   opacity: 4;
   visibility: visible;
+
 }
 
 /* Contenido del menú (Inicio, Usuario,etc, además del color del fondo del mismo) */
@@ -264,4 +264,12 @@ label {
   position: relative;
     left: 15%;
     top: -300px;
+}
+footer{
+  width: 100%;
+  float: left;
+  display:block;
+  background-color: #131F60;
+  color: white;
+  margin-top: 3rem;
 }

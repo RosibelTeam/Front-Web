@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app.routing.module';
 import { RegistroProductosComponent } from './components/registro-productos/registro-productos.component';
 import { RepartidorComponent } from './components/repartidor/repartidor.component';
 import { AdministradorComponent } from './components/administrador/administrador.component';
+import { CarritoComponent } from './components/carrito/carrito.component';
+import { ProductoIndividualComponent } from './components/producto-individual/producto-individual.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,11 @@ import { AdministradorComponent } from './components/administrador/administrador
     InicioSecionComponent,
     RegistroProductosComponent,
     RepartidorComponent,
-    AdministradorComponent
+    AdministradorComponent,
+    CarritoComponent,
+    ProductoIndividualComponent
   ],
-  
+
   imports: [
     BrowserModule,
     HttpClientModule,

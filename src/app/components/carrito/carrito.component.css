@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+.letranav {
+    font-family: 'Dongle';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.letra {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+/* solo la linea de los botones */
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: rgb(243, 234, 234);
+    height: 6px;
+    top: 0;
+    position: absolute;
+    transition: width 0.2s;
+    background-color: #fff;
+}
+
+nav ul li a:hover::before {
+    width: 52%;
+}
+
+.nav-item {
+    margin-left: 10%;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+}
+
+/* Contenedor de los botones en la nav */
+.con {
+    position: relative;
+    left: 12%;
+}
+
+/* para el formuladio que tiene el de buscar */
+.d-flex {
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: -89px;
+    width: 400px;
+    height: 40px;
+    margin-right: -14%;
+}
+
+/* para la imagen de la papeleria para mover el titulo de papelria en linea huauchinango */
+.papeleria {
+    width: 110px;
+    height: 80px;
+    position: relative;
+    left: 500%;
+    margin-right: -95px;  /*aqui se mueve el letrero */
+}
+
+/* letra de los botones de la navbar */
+.letra {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+    position: static;
+}
+.btn {
+    border: none;
+    outline: none;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+}
+
+.btn:hover {
+    background: #088ae1;
+    position: static;
+}
+/* Menú costado */
+
+/* Contenido del menu, esto es el icono (posición) y tamaño */
+.container .btn-menu,
+.logo,
+label {
+    float: left;
+    line-height: 100px;
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    position: relative;
+    left: -1460px;
+    /*con este se mueve el icono de rayas menu */
+}
+
+/* Componentes del menú del costado, botones y demás */
+
+/* Botón menu */
+#btn-menu {
+    display: none;
+}
+
+/* Contenedor del menu, cuando se abre y su posición */
+.container-menu {
+    position: absolute;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 160%;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* Visibilidad del menú costado, traerlo */
+#btn-menu:checked~.container-menu {
+    opacity: 4;
+    visibility: visible;
+
+}
+/* Contenido del menú (Inicio, Usuario,etc, además del color del fondo del mismo) */
+.cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background: #131F60;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+/* Posición del contenedor (lo despega del lado izquierdo, dejalo así) */
+#btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+}
+/* Determina la altura del contenido del menú */
+.cont-menu nav {
+    transform: translateY(100%);
+}
+/* Tamaño, tipo de letra y demás de Inicio, cerrar sesión  */
+.cont-menu nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    position: relative;
+    top: -90px;
+}
+/* Color de cuando pasas el puntero por los botones */
+.cont-menu nav a:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+/* Tamaño y color del icon de X (cerrar) */
+.cont-menu label {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: rgb(250, 12, 12);
+    cursor: pointer;
+    font-size: 98px;
+}
+.usuario {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 15%;
+    top: -300px;
+}
+footer {
+    width: 100%;
+    float: left;
+    display: block;
+    background-color: #131F60;
+    color: white;
+    margin-top: 3rem;
+}
+h1 {
+    margin-top: 1%;
+    padding-left: 45%;
+}
+/* Componentes de los componentes */
+
+/* Tamaño del forma */
+.forma {
+    width: 1071px;
+    height: 118px;
+    background: #ffffffd4;
+    border-color: #000000;
+    border-style: solid;
+    border-width: thin;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 10px;
+    /* Margen de posición superior */
+    margin-left: 80px;
+    border-radius: 30px;
+    font-family: 'calibri';
+    color: rgb(0, 0, 0);
+}
+
+/* Imagen del producto */
+#producto {
+    width: 130px;
+    height: 130px;
+    left: 177px;
+    top: 500px;
+}
+
+/* Descripción del producto */
+.descripcion {
+    color: #000000;
+    position: absolute;
+    left: 220px;
+    top: 210px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 30px;
+}
+
+/* Posición de cantidades, titulo */
+.cantidad {
+    color: #363636;
+    left: 50%;
+    top: 25%;
+    position: absolute;
+    height: 400px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Posición de cantidades, titulo */
+.precio {
+    color: #363636;
+    left: 65%;
+    top: 25%;
+    position: absolute;
+    height: 400px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Tamaño de la cantidad */
+.forma-uni {
+    height: 40px;
+    width: 100px;
+}
+
+/* botón eliminar */
+#boton {
+    position: relative;
+    width: 96px;
+    height: 40px;
+    left: 920px;
+    top: -90px;
+}
+
+.total {
+    color: #000000;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    height: 400px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+}
+
+.subtotal {
+    color: #000000;
+    left: 65%;
+    top: 51%;
+    position: absolute;
+    height: 400px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+}
+
+/* Botón pagar */
+#pagar {
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 500px;
+    top: 600px;
+    color: rgb(255, 255, 255);
+    background-color: #222222;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/* Cuando pasas el cursor por el botón */
+#pagar:hover {
+    background: blue;
+    color: white;
+}
+
+/* cuando se le da click */
+#pagar:active {
+    background: gray;
+    color: white;
+}
